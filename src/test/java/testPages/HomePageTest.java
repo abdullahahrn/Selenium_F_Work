@@ -28,7 +28,7 @@ public class HomePageTest extends BaseClass {
 	@Test(enabled = true, priority = 5)
 	public void clickForgotUsernameOrPassword() throws InterruptedException {
 		homePage.ForgotUsernameOrPasswordclicked();
-
+		
 	}
 
 	@Test(enabled = true, priority = 6)

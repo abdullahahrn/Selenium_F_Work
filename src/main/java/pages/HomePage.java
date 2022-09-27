@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
@@ -22,14 +23,16 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='ATMs/Locations']")
 	WebElement ATMLocation;
 
-	@FindBy(xpath = "//input[@id='btnSignon']")
+	@FindBy(id="btnSignon")
 	WebElement loginButton;
 
-	@FindBy(xpath = "//a[text()='Forgot username or password?']")
+	@FindBy(how = How.XPATH, using ="//a[text()='Forgot username or password?']")
 	WebElement forgotUsernameOrPassword;
 
 	@FindBy(xpath = "//a[text()='Sign On']")
 	WebElement clickSignonButton;
+	
+
 
 	public boolean logodisplayed() {
 		boolean flag = logo.isDisplayed();
