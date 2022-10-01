@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 26 20:59:33 EDT 2022</td>
+<td>Started on:</td><td>Sat Oct 01 16:10:46 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>75 seconds (75173 ms)</td>
+<tr><td>Total time:</td><td>426 seconds (426784 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,125 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testPages.HomePageTest.privacyCookiesandLegal()'><b>privacyCookiesandLegal</b><br>Test class: testPages.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;ABDULLAH-HARUN&apos;, ip: &apos;192.168.0.25&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b795e0d9afd0803084087b232fb7ebd, clickElement {id=84e90b15-6c84-4d87-a22b-3314170f0d62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\aalha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61557/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5b795e0d9afd0803084087b232fb7ebd)] -&gt; link text: Privacy, Cookies, and Legal]
+Session ID: 5b795e0d9afd0803084087b232fb7ebd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at testPages.HomePageTest.privacyCookiesandLegal(HomePageTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1422271143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1422271143'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;ABDULLAH-HARUN&apos;, ip: &apos;192.168.0.25&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b795e0d9afd0803084087b232fb7ebd, clickElement {id=84e90b15-6c84-4d87-a22b-3314170f0d62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\aalha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61557/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5b795e0d9afd0803084087b232fb7ebd)] -&gt; link text: Privacy, Cookies, and Legal]
+Session ID: 5b795e0d9afd0803084087b232fb7ebd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at testPages.HomePageTest.privacyCookiesandLegal(HomePageTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,35 +195,150 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testPages.HomePageTest.clickSignonButton()'><b>clickSignonButton</b><br>Test class: testPages.HomePageTest</td>
+<td title='testPages.HomePageTest.redColorSignButtonFieldTest()'><b>redColorSignButtonFieldTest</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.startNowButtonClicked()'><b>startNowButtonClicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.redcolorsignonbuttonclickedTest()'><b>redcolorsignonbuttonclickedTest</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
 <td>9</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 <tr>
-<td title='testPages.HomePageTest.aboutUsclicked()'><b>aboutUsclicked</b><br>Test class: testPages.HomePageTest</td>
+<td title='testPages.HomePageTest.redColorSignonButtonClickedTest()'><b>redColorSignonButtonClickedTest</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
-<td>17</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.whitecolorSignonButtonclicked()'><b>whitecolorSignonButtonclicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.set_a_specific_size_of_windows()'><b>set_a_specific_size_of_windows</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>19</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.use_of_navigate_method()'><b>use_of_navigate_method</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>22</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.use_of_getattribute_method()'><b>use_of_getattribute_method</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.a_use_of_sendKeys_method()'><b>a_use_of_sendKeys_method</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.save_Username_Is_Selected_Test()'><b>save_Username_Is_Selected_Test</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.Privacy_Cookies_and_Legal_clicked_Test()'><b>Privacy_Cookies_and_Legal_clicked_Test</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.whiteColorsignonbuttonclicked()'><b>whiteColorsignonbuttonclicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.logoTest()'><b>logoTest</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.clicked_Security_Center_Test()'><b>clicked_Security_Center_Test</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>11</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.logoTest02()'><b>logoTest02</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 <tr>
 <td title='testPages.HomePageTest.ATMLocationclicked()'><b>ATMLocationclicked</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
 <td>7</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 <tr>
-<td title='testPages.HomePageTest.clickloginButtonFieldTest()'><b>clickloginButtonFieldTest</b><br>Test class: testPages.HomePageTest</td>
+<td title='testPages.HomePageTest.a_use_of_sendkeys_method_then_click_by_enter_and_click_clear()'><b>a_use_of_sendkeys_method_then_click_by_enter_and_click_clear</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>21</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.privacyCookiesandLegal01()'><b>privacyCookiesandLegal01</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>17</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.redcolorSignOnButtonClicked01()'><b>redcolorSignOnButtonClicked01</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
 <td>7</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 <tr>
-<td title='testPages.HomePageTest.clickForgotUsernameOrPassword()'><b>clickForgotUsernameOrPassword</b><br>Test class: testPages.HomePageTest</td>
+<td title='testPages.HomePageTest.a_use_of_sendkeys_method_then_click_submit_and_click_clear01()'><b>a_use_of_sendkeys_method_then_click_submit_and_click_clear01</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>37</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.aboutUsclicked()'><b>aboutUsclicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>11</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.forgotUsernameOrPasswordclicked()'><b>forgotUsernameOrPasswordclicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.searchbuttonIdclickedTest()'><b>searchbuttonIdclickedTest</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.redcolorSignOnButtonClicked02()'><b>redcolorSignOnButtonClicked02</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
 <td>7</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 <tr>
-<td title='testPages.HomePageTest.logoTest()'><b>logoTest</b><br>Test class: testPages.HomePageTest</td>
+<td title='testPages.HomePageTest.A_use_of_gettext_method()'><b>A_use_of_gettext_method</b><br>Test class: testPages.HomePageTest</td>
 <td></td>
-<td>0</td>
-<td>testPages.HomePageTest@1e1a0406</td></tr>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.findaLocationClicked()'><b>findaLocationClicked</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.A_Use_Of_gettitle_method()'><b>A_Use_Of_gettitle_method</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.use_op_getCurrentURL_method()'><b>use_op_getCurrentURL_method</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>16</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
+<tr>
+<td title='testPages.HomePageTest.tableTest()'><b>tableTest</b><br>Test class: testPages.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>testPages.HomePageTest@4b0d79fc</td></tr>
 </table><p>
 </body>
 </html>

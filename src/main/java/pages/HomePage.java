@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +8,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-	WebDriver driver;
+	protected WebDriver driver;
+	protected HomePage homepage;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -23,16 +25,21 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='ATMs/Locations']")
 	WebElement ATMLocation;
 
-	@FindBy(id="btnSignon")
-	WebElement loginButton;
+	@FindBy(xpath = "//a[text()='Privacy, Cookies, and Legal']")
+	WebElement Privacy_Cookies_Legal;
 
-	@FindBy(how = How.XPATH, using ="//a[text()='Forgot username or password?']")
+	@FindBy(id = "btnSignon")
+	WebElement redColorSignonButton;
+
+	@FindBy(how = How.XPATH, using = "//a[text()='Forgot username or password?']")
 	WebElement forgotUsernameOrPassword;
 
 	@FindBy(xpath = "//a[text()='Sign On']")
-	WebElement clickSignonButton;
-	
+	WebElement whitecolorSignonButton;
 
+	@FindBy
+
+	By searchbuttonclicked = By.id("nxgSearchButton");
 
 	public boolean logodisplayed() {
 		boolean flag = logo.isDisplayed();
@@ -54,9 +61,22 @@ public class HomePage {
 
 	}
 
-	public void loginButtonFieldclicked() throws InterruptedException {
+	public void Privacy_Cookies_Legal_clicked() throws InterruptedException {
 		Thread.sleep(3000);
-		loginButton.click();
+		Privacy_Cookies_Legal.click();
+		Thread.sleep(3000);
+
+	}
+
+	public void redColorSignonButtonclicked() throws InterruptedException {
+		Thread.sleep(3000);
+		redColorSignonButton.click();
+		Thread.sleep(3000);
+	}
+
+	public void whitecolorSignonButtonclicked() throws InterruptedException {
+		Thread.sleep(3000);
+		whitecolorSignonButton.click();
 		Thread.sleep(3000);
 	}
 
@@ -66,10 +86,11 @@ public class HomePage {
 		Thread.sleep(3000);
 	}
 
-	public void SignonButtonclicked() throws InterruptedException {
+	public void searchbuttonclicked() throws InterruptedException {
 		Thread.sleep(3000);
-		clickSignonButton.click();
+		driver.findElement(searchbuttonclicked).click();
 		Thread.sleep(3000);
+
 	}
 
 }

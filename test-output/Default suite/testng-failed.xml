@@ -5,8 +5,8 @@
     <classes>
       <class name="testPages.HomePageTest">
         <methods>
+          <include name="privacyCookiesandLegal"/>
           <include name="tearUp"/>
-          <include name="clickloginButtonFieldTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testPages.HomePageTest -->
